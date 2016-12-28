@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function randomize() {
+  field = "res" + parseInt(Math.floor((Math.random() * 4) + 1));
+  random = document.getElementById(field).value;
+  document.getElementById("ans").innerHTML = "You should go to " +random;
+  }
+  </script>
+</head>
+<body>
+<h1>Hello World</h1>
+<p>I'm hosted with GitHub Pages.</p>
+<form>
+  Res1:<br>
+  <input type="text" name="res1" id="res1">
+  <br>
+  Res2:<br>
+  <input type="text" name="res2" id="res2">
+  <br>
+  Res3:<br>
+  <input type="text" name="res3" id="res3">
+  <br>
+  Res4:<br>
+  <input type="text" name="res4" id="res4">
+</form>
+<button onclick="randomize()">Yoloswag</button>
+<br>
+<h2 id="ans"></h2>
+</body>
+</html>
