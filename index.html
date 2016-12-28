@@ -4,9 +4,17 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <script>
   function randomize() {
-  field = "res" + parseInt(Math.floor((Math.random() * 4) + 1));
+  field = "res" + parseInt(Math.floor((Math.random() * countBox) + 1));
   random = document.getElementById(field).value;
   document.getElementById("ans").innerHTML = "You should go to " +random;
+  }
+  var countBox = 3
+  var boxName = 0
+  function addInput() {
+     var text1 = "Res" + countBox;
+     var boxName="res"+countBox;
+     document.getElementById('extra').innerHTML+=' '+text1+'<br/>  <input type="text" id="'+boxName+'"  /><br/>';
+     countBox += 1;
   }
   </script>
 </head>
@@ -15,21 +23,18 @@
 <p>Enter the things you cant decide between in the text box </p>
 <br>
 <form>
-  Res1:<br>
+  Res1<br>
   <input type="text" name="res1" id="res1">
   <br>
-  Res2:<br>
+  Res2<br>
   <input type="text" name="res2" id="res2">
   <br>
-  Res3:<br>
-  <input type="text" name="res3" id="res3">
+  <span id="extra"></span>
   <br>
-  Res4:<br>
-  <input type="text" name="res4" id="res4">
 </form>
-<br>
 <center>
 <button onclick="randomize()">Yoloswag</button>
+<button onclick="addInput()">Add Choice</button>
 </center>
 
 <br>
