@@ -1,0 +1,29 @@
+body {
+    background-color: linen;
+}
+
+h1 {
+    color: purple;
+    margin-left: 1px;
+    text-align: center;
+}
+
+form {
+
+  text-align: center;
+}
+
+button {
+
+  
+
+
+}
+
+
+
+.mycenter {
+    position: relative;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%) }
