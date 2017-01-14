@@ -3,30 +3,41 @@
 <head>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <script>
+  // This is the randomizing function
   function randomize() {
   field = "res" + parseInt(Math.floor((Math.random() * countBox) + 1));
   random = document.getElementById(field).value;
+  // This is the check for input
+  if (random == "")
+    {
+    alert("Please Fill All Required Fields");
+    return;
+    }
   document.getElementById("ans").innerHTML = "You should go to " +random;
   }
+
+  //This is the add input button function
   var countBox = 3
   var boxName = 0
   function addInput() {
-     var text1 = "Res" + countBox;
+     var text1 = "Option " + countBox;
      var boxName="res"+countBox;
      document.getElementById('extra').innerHTML+=' '+text1+'<br/>  <input type="text" id="'+boxName+'"  /><br/>';
      countBox += 1;
   }
+
   </script>
+
 </head>
 <body>
-<h1>Pauls way to solve conflict</h1>
+<h1>Paul's way to solve conflict</h1>
 <p>Enter the things you cant decide between in the text box </p>
 <br>
 <form>
-  Res1<br>
+  Option 1 <br>
   <input type="text" name="res1" id="res1">
   <br>
-  Res2<br>
+  Option 2 <br>
   <input type="text" name="res2" id="res2">
   <br>
   <span id="extra"></span>
