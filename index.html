@@ -5,8 +5,8 @@
   <script>
   // This is the randomizing function
   function randomize() {
-  field = "res" + parseInt(Math.floor((Math.random() * countBox) + 1));
-  random = document.getElementById(field).value;
+  var field = "res" + parseInt(Math.floor((Math.random() * countBox) + 1));
+  var random = document.getElementById(field).value;
   // This is the check for input
   if (random == "")
     {
