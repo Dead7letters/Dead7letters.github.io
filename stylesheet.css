@@ -1,5 +1,5 @@
 body {
-    background-color: #FFD07B;
+    background-color: #FFA400;
 }
 
 h1 {
@@ -22,7 +22,7 @@ form {
 
 button {
 background-color: #083D77;
-color: BDD9BF;
+color: white;
 display:inline-flex;
 padding: 10px 28px;
 
